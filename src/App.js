@@ -10,7 +10,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import Header from "./components/Header";
 import Search from "./pages/Search";
 import PriorityPage from "./pages/PriorityPage";
-import Homes from "./pages/Homes";
+import Display from "./pages/Display";
+import State from "./pages/State";
 function App() {
   return (
     <BrowserRouter>
@@ -18,14 +19,15 @@ function App() {
       <Header/>
       <ToastContainer position="top-center"/>
  <Routes>
-  <Route exact path="/" Component={Home}/>
+  <Route exact path="/priority" Component={PriorityPage}/>
   <Route exact path="/add" Component={AddEdit}/>
   <Route exact path="/update/:id" Component={AddEdit}/>
   <Route exact path="/view/:id" Component={View}/>
   <Route exact path="/about" Component={About}/>
   <Route exact path="/search" Component={Search}/>
-  <Route exact path="/priority" Component={PriorityPage}/>
-  <Route exact path="/homes" Component={Homes}/>
+  <Route exact path="/display" Component={Display}/>
+  <Route exact path="/" Component={Home}/>
+  <Route exact path="/state" Component={State}/>
  </Routes>
     </div>
     </BrowserRouter>

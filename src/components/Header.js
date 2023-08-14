@@ -14,7 +14,7 @@ if(location.pathname==="/"){
     setActiveTab("Home")
 } else if(location.pathname ==="/add"){
     setActiveTab("AddContact")
-} else if(location.pathname==="/about"){
+} else if(location.pathname ==="/about"){
 setActiveTab("About");
 }
 
