@@ -1,0 +1,90 @@
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.card-text{
+    margin-left: -50px;
+    margin-top:10px;
+}
+
+.firstpicbutton{
+position: absolute;
+    background-color: white;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    margin-left: -320px;
+   
+  }
+  .secondpicbutton{
+    position: absolute;
+        background-color: white;
+        padding-top: 2px;
+        padding-bottom: 5px;
+        margin-left:-200px ;
+      }
+      .value{
+position:absolute;
+
+margin-left: 450px;
+      }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    width:410px;
+    background-color: #f1f1f1;
+    height: 100px;
+  }
+
+  .card-title{
+    font-size: medium;
+  }
+
+  .card-text{
+    font-weight: 500;
+    margin-left: -45px;
+  }
+  .inboximg1{
+    position: relative;
+   height: 30px;
+   width: 30px;
+   margin-right: 100px;
+   margin-bottom:0px;
+  }
+  .inboximg2{
+    position: absolute;
+    height: 35px;
+   width: 35px;
+   margin-left:-180px;
+  }
+
+  .definepicinbox{
+    position: absolute;
+    width: 40px;
+    height:40px;
+    margin-left:340px;
+    float: right;
+    border-radius: 50%;
+  }
+
+  .bottom{
+    margin-bottom:-30px;
+    margin-right:50px;
+  }
+
+  .labelleft{
+    margin-left: -1130px;
+  }
