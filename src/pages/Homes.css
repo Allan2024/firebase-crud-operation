@@ -24,7 +24,8 @@ position: absolute;
     background-color: white;
     padding-top: 2px;
     padding-bottom: 5px;
-    margin-left: -320px;
+    margin-left: -1000px;
+    padding-right: 1000px;
    
   }
   .secondpicbutton{

@@ -66,7 +66,7 @@ setData({});
 </div>
 </div>
 
-    <div style={{marginTop: "100px"}}>
+    <div style={{marginTop: "10px"}}>
       <table className='styled-table'>
 <thead>
   <tr>
