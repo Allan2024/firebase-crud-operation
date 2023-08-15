@@ -9,9 +9,9 @@ import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Header from "./components/Header";
 import Search from "./pages/Search";
-import PriorityPage from "./pages/PriorityPage";
-import Display from "./pages/Display";
 import State from "./pages/State";
+import Display from "./pages/Display";
+import PriorityPage from "./pages/PriorityPage";
 function App() {
   return (
     <BrowserRouter>

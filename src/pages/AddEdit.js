@@ -84,6 +84,11 @@ return() => {
              alignContent:"center",}}
              onSubmit={handleSubmit}
              >
+
+{
+  /* Input Data*/
+}
+
 <label htmlFor="name">Name</label>
 <input 
 type="text"

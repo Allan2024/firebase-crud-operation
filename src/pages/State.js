@@ -1,28 +1,35 @@
-import React from 'react'
 import { Link } from "react-router-dom";
 import {data} from './data';
-
+import { useEffect,useState } from "react";
+import './Homes.css';
+import 'bootstrap/dist/css/bootstrap.css';
+ 
 export const State = () => {
-  return (<>
-    <div>State</div>
-    <div className="App">
+    return (
+        <>
+        
+<div className="App">
 <div className="dropdown labelleft">
 <button class="dropbtn">Display <img className="defineimgsizein" src ={require('../images/dropdown2.png')} alt=""/></button>
 <div className="dropdown-content">
-<a className="" href="display"><Link className="reducesize" to ="/"></Link>Grouping<hide className="invisible"> i am hereee</hide><button className="definedropdownbutton1"> Display<hide className="invisible">click</hide><img className="defineimgsize1"  alt=""/></button></a> 
-<a className="" href="priority"><Link className="reducesize" to ="/"></Link> Ongoing <hide className="invisible"> i am hereee</hide><button className="definedropdownbutton2">Priority<hide className="invisible">Click</hide><img className="defineimgsize1"  alt=""/></button></a>
+<a className="" href="state"><Link className="reducesize" to ="/priority"></Link>Grouping<hide className="invisible"> i am hereee</hide><button className="definedropdownbutton1"> State<hide className="invisible">click</hide><img className="defineimgsize1"  alt=""/></button></a> 
+<a className="" href="priority"><Link className="reducesize" to ="/display"></Link> Ongoing <hide className="invisible"> i am hereee</hide><button className="definedropdownbutton2">Priority<hide className="invisible">Click</hide><img className="defineimgsize1"  alt=""/></button></a>
+<a className="" href="display"><Link className="reducesize" to ="/"></Link> Ongoing <hide className="invisible"> i am hereee</hide><button className="definedropdownbutton2">Display<hide className="invisible">Click</hide><img className="defineimgsize1"  alt=""/></button></a>
 </div>
 </div><br></br>
+{
+  /* Fetching data from API locally stored in Data.js (only fetching id and priority)*/
+}
 {data.map((item) => (
         <div className="parent">
         
         <div class="container">
   <div class="row">
     <div class="col-2">
-    <p container="values">     <img className="defineimgsize" src ={require('../images/nopriority.png')} alt=""/>
-    <p className="namefloat">On the process</p>
-<p className='numberfloat'>1</p>
-<p className='iconsfloat'><img className="defineimgsize" src ={require('../images/plus.png')} alt=""/></p> </p>
+    <p container="values">     <img className="defineimgsize" src ={require('../images/halfdone.png')} alt=""/>
+    <p className="namefloat">Half Done</p>
+<p className='numberfloat'>{item.priority}</p>
+<p className='iconsfloat'>icons</p> </p>
     <div className="card">
     <img className="definepicinbox" src ={require('../images/akansha punjabi.jpeg')} alt=""/>
   <div className="card-body">
@@ -42,10 +49,10 @@ export const State = () => {
     <div className="col-2">
         </div>
     <div className="col-2">
-    <p container="values">     <img className="defineimgsize" src ={require('../images/priority.png')} alt=""/>
-    <p className="namefloat">Nearby completion</p>
-<p className='numberfloat'>1</p>
-<p className='iconsfloat'><img className="defineimgsize" src ={require('../images/plus.png')} alt=""/></p> </p>
+    <p container="values">     <img className="defineimgsize" src ={require('../images/done.jpeg')} alt=""/>
+    <p className="namefloat">Done</p>
+<p className='numberfloat'>{item.priority}</p>
+<p className='iconsfloat'>icons</p> </p>
     <div className="card">
     <img className="definepicinbox" src ={require('../images/businessman2.jpeg')} alt=""/>
   <div className="card-body">
@@ -62,10 +69,10 @@ export const State = () => {
     <div className="col-2">
         </div>
     <div className="col-2">
-    <p container="values">     <img className="defineimgsize" src ={require('../images/urgent.png')} alt=""/>
+    <p container="values">     <img className="defineimgsize" src ={require('../images/todo.png')} alt=""/>
     <p className="namefloat">To-Do</p>
-<p className='numberfloat'>1</p>
-<p className='iconsfloat'><img className="defineimgsize" src ={require('../images/plus.png')} alt=""/></p> </p>
+<p className='numberfloat'>{item.priority}</p>
+<p className='iconsfloat'>icons</p> </p>
     <div className="card">
     <img className="definepicinbox" src ={require('../images/abhideep maity.jpeg')} alt=""/>
   <div className="card-body">
@@ -92,6 +99,6 @@ export const State = () => {
 
 
 </>
-  )
-}
-export default State;
+    )
+  }
+  export default State;
