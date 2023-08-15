@@ -1,4 +1,13 @@
 # Link to my Website: https://firebase-crud-operation.vercel.app/
+
+Click on display to view tickets based on their state and priority
+click on add contact tab to add a new contact with their progress information to the list 
+click on 
+# Sort By - To view the details in the form of Cards and based on their priority ,state and name . 
+The details are fetched from firebase server 
+
+While just in display page, some data is fetched from the 
+# Api which is stored locally in DATA.js file 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
