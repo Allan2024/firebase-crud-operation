@@ -116,7 +116,7 @@ setData({});
       <br></br>
       <br></br>
      <div><p container="values" >     
-    <p className="namefloat" style={{paddingRight:"200px"}}>{item.status}</p>
+    <p className="namefloat" style={{paddingRight:"200px"}}>{item.name}</p>
 <p className='numberfloat'>{item.priority}</p>
 <p className='iconsfloat' style={{ position:"absolute" ,paddingLeft:"10px",marginBottom:"20px"}}><img className="defineimgsize" src ={require('../images/plus.png')} alt=""/></p> </p>
     <div className="card">
@@ -124,10 +124,10 @@ setData({});
   <div className="card-body">
   <h5 className="card-title">{item.id}</h5>
   <br></br>
-  <p className="card-text">Conduct Security Vulnerability Assesment</p>
+  <p className="card-text">{item.status}</p>
   <br></br><br></br>
-  <img className="inboximg1 bottom" src ={require('../images/exclamation2.jpg')} alt=""/> <button className="btn btn-light bottom">Feauture Request</button> 
-  <img className="defineimgsize" style={{marginLeft:"300px",paddingBottom:"5px"}}  src ={require('../images/nopriority.png')} alt=""/>
+ <button className="btn btn-light bottom"> &#9684; Feauture Request</button> 
+  <img className="defineimgsize" style={{marginLeft:"330px",paddingBottom:"5px"}}  src ={require('../images/nopriority.png')} alt=""/>
   </div>
   </div>
   </div>
@@ -137,7 +137,7 @@ setData({});
 <td>
   <br></br>
   <br></br><div><p container="values" >     
-    <p className="namefloat" style={{paddingRight:"200px"}}>{item.status}</p>
+    <p className="namefloat" style={{paddingRight:"200px"}}>{item.name}</p>
 <p className='numberfloat'>{item.priority}</p>
 <p className='iconsfloat' style={{ position:"absolute" ,paddingLeft:"10px",paddingBottom:"10px"}}><img className="defineimgsize" src ={require('../images/plus.png')} alt=""/></p> </p>
     <div className="card">
@@ -145,17 +145,17 @@ setData({});
   <div className="card-body">
   <h5 className="card-title">{item.id}</h5>
   <br></br>
-  <p className="card-text">Conduct Security Vulnerability Assesment</p>
+  <p className="card-text">{item.status}</p>
   <br></br><br></br>
-  <img className="inboximg1 bottom" src ={require('../images/exclamation2.jpg')} alt=""/> <button className="btn btn-light bottom">Feauture Request</button> 
-  <img className="defineimgsize" style={{marginLeft:"300px",paddingBottom:"5px"}}  src ={require('../images/nopriority.png')} alt=""/>
+   <button className="btn btn-light bottom">&#9684; Feauture Request</button> 
+  <img className="defineimgsize" style={{marginLeft:"330px",paddingBottom:"0px"}}  src ={require('../images/nopriority.png')} alt=""/>
   </div>
   </div>
   </div>
 <br></br></td>
 
 <td><br></br><br></br> <div><p container="values" >     
-    <p className="namefloat" style={{paddingRight:"200px"}}>{item.status}</p>
+    <p className="namefloat" style={{paddingRight:"200px"}}>{item.name}</p>
 <p className='numberfloat'>{item.priority}</p>
 <p className='iconsfloat' style={{ position:"absolute" ,paddingLeft:"10px",paddingBottom:"10px"}}><img className="defineimgsize" src ={require('../images/plus.png')} alt=""/></p> </p>
     <div className="card">
@@ -163,10 +163,10 @@ setData({});
   <div className="card-body">
   <h5 className="card-title">{item.id}</h5>
   <br></br>
-  <p className="card-text">Conduct Security Vulnerability Assesment</p>
+  <p className="card-text">{item.status}</p>
   <br></br><br></br>
-  <img className="inboximg1 bottom" src ={require('../images/exclamation2.jpg')} alt=""/> <button className="btn btn-light bottom">Feauture Request</button> 
-  <img className="defineimgsize" style={{marginLeft:"300px",paddingBottom:"5px"}}  src ={require('../images/nopriority.png')} alt=""/>
+  <button className="btn btn-light bottom"> &#9684; Feauture Request</button> 
+  <img className="defineimgsize" style={{marginLeft:"330px",paddingBottom:"5px"}}  src ={require('../images/nopriority.png')} alt=""/>
   </div>
   </div>
   </div>

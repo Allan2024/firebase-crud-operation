@@ -74,20 +74,7 @@ background-color: #f3f3f3;
     color:black;
 }
 
-.firstpicbutton{
-    position: absolute;
-        background-color: white;
-        padding-top: 2px;
-        padding-bottom: 5px;
-        margin-left: -320px;
-       
-      }
-      .secondpicbutton{
-        position: absolute;
-            background-color: white;
-            padding-top: 2px;
-            padding-bottom: 5px;
-            margin-left:100px ;
-          }
+
+      
 
           
