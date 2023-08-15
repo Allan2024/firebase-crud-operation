@@ -5,8 +5,8 @@ import{toast} from "react-toastify";
 import './AddEdit.css';
 const initialState={
     name:"",
-    email:"",
-    contact:""
+    status:"",
+    priority:""
 
 }
 
@@ -14,7 +14,7 @@ export const AddEdit = () => {
     const[state,setstate] = useState(initialState);
     const[data,setData] = useState({});
 
-    const {name,email,contact}= state;
+    const {name,status,priority}= state;
 
     const navigate = useNavigate();
 
@@ -51,7 +51,7 @@ return() => {
     };
     const handleSubmit =(e) =>{
       e.preventDefault();
-      if(!name || !email || !contact){
+      if(!name || !status || !priority){
         toast.error("Please provide value in each input field")
       } else{
         if(!id){
@@ -99,23 +99,23 @@ value={name || ""}
 onChange={handleInputChange}
 />
 
-<label htmlFor="email">Email</label>
+<label htmlFor="status">state</label>
 <input 
-type="email"
-id="email"
-name="email"
-placeholder='Your Email'
-value={email || ""}
+type="text"
+id="status"
+name="status"
+placeholder='Your Current status'
+value={status || ""}
 onChange={handleInputChange}
 />
 
-<label htmlFor="contact">contact</label>
+<label htmlFor="Priority">Priority</label>
 <input 
 type="number"
-id="contact"
-name="contact"
-placeholder='Your Contact No....'
-value={contact || ""}
+id="priority"
+name="priority"
+placeholder='Priority of your task'
+value={priority || ""}
 onChange={handleInputChange}
 />
 <input type="submit" value={id ? "Update" : "Save"} />

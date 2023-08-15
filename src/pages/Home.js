@@ -72,8 +72,8 @@ setData({});
   <tr>
     <th style={{textAlign: "center"}}>No.</th>
     <th style={{textAlign: "center"}}>Name</th>
-    <th style={{textAlign: "center"}}>Email</th>
-    <th style={{textAlign: "center"}}>Contact</th>
+    <th style={{textAlign: "center"}}>Status</th>
+    <th style={{textAlign: "center"}}>Priority</th>
    {!sort && ( <th style={{textAlign: "center"}}>Action</th>)}
   </tr>
 </thead>
@@ -84,8 +84,8 @@ setData({});
     <tr key={id}>
       <th scope="row">{index+1}</th>
       <td>{data[id].name}</td>
-      <td>{data[id].email}</td>
-      <td>{data[id].contact}</td>
+      <td>{data[id].status}</td>
+      <td>{data[id].priority}</td>
       <td>
         <Link to={`/update/$(id)`}>
         <button className='btn btn-edit'> Edit </button>
@@ -112,8 +112,8 @@ setData({});
         <tr key={index}>
       <th scope="row">{index+1}</th>
       <td>{item.name}</td>
-      <td>{item.email}</td>
-      <td>{item.contact}</td>
+      <td>{item.status}</td>
+      <td>{item.priority}</td>
       </tr>
       )
     })}
@@ -127,9 +127,9 @@ setData({});
     <select className='dropdown' name='colValue' onChange={handleChange}>
       <option> Please Select </option>
       <option value="name"> Name</option>
-      <option value="email"> Email</option>
+      <option value="status"> Status</option>
       <option value="contact">Contact</option>
-      <option value= "status">Status</option>
+      <option value= "priority">Priority</option>
     </select>
     <button className='btn btn-reset' onClick={handleReset}>Reset</button>
     <br/>
