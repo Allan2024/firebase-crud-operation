@@ -10,10 +10,10 @@ export const Header = () => {
     const navigate =useNavigate();
 
     useEffect(()=>{
-if(location.pathname==="/"){
+if(location.pathname==="/home"){
     setActiveTab("Home")
 } else if(location.pathname ==="/add"){
-    setActiveTab("AddContact")
+    setActiveTab("Add to board")
 } else if(location.pathname ==="/about"){
 setActiveTab("About");
 }
@@ -38,7 +38,7 @@ setActiveTab("About");
                 value={search}
                 />
             </form>
-    <Link to ="/">
+    <Link to ="/home">
         <p className={`${activeTab === " Home " ? "active" : ""}`}
         onClick={()=> setActiveTab("Home")}
         >
@@ -46,8 +46,8 @@ setActiveTab("About");
         </p>
     </Link>
     <Link to ="/add">
-        <p className={`${activeTab === " AddContact " ? "active" : ""}`}
-        onClick={()=> setActiveTab("AddContact")}
+        <p className={`${activeTab === " Add to board " ? "active" : ""}`}
+        onClick={()=> setActiveTab("Add To Board")}
         >
          Add Contact
         </p>

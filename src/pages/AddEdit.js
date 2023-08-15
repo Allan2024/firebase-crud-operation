@@ -72,7 +72,7 @@ return() => {
           });
         }
      
-        setTimeout(()=>navigate("/"),500);
+        setTimeout(()=>navigate("/home"),500);
       }
     }
   return (

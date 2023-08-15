@@ -25,8 +25,8 @@ function App() {
   <Route exact path="/view/:id" Component={View}/>
   <Route exact path="/about" Component={About}/>
   <Route exact path="/search" Component={Search}/>
-  <Route exact path="/display" Component={Display}/>
-  <Route exact path="/" Component={Home}/>
+  <Route exact path="/" Component={Display}/>
+  <Route exact path="/home" Component={Home}/>
   <Route exact path="/state" Component={State}/>
  </Routes>
     </div>
